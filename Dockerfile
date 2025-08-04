@@ -2,7 +2,7 @@
 FROM node:14
 WORKDIR /app
 COPY package.json /app
-RUN npm install
+RUN npm ci
 COPY . /app
 CMD ["node", "index.js"]
 EXPOSE 8080
